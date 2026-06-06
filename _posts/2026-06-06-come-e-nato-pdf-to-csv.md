@@ -3,6 +3,7 @@ title: "Com'è nato pdf-to-csv: una cuffia del semiasse e un catalogo PDF imposs
 subtitle: "Dalla Mini Cooper S R53 del 2006 a uno strumento per cercare ricambi per dimensione"
 date: 2026-06-06 14:00:00 +0200
 categories: [Meccanica, Dati]
+mermaid: true
 ---
 
 Quasi tutti i miei progetti software nascono da un problema fisico. Questo non fa eccezione.
@@ -89,6 +90,22 @@ alla riga per **Y** (tolleranza ±5 pt). Validato **58/58** sulla pagina di test
 
 Risultato: un CSV rettangolare e pulito (20 colonne), con Ø1, Ø2 e L normalizzati come intervallo
 `min|max` (tenendo anche il token grezzo originale, per sicurezza).
+
+In sintesi, il flusso completo — dal PDF al filtro:
+
+<div class="mermaid" markdown="0">
+flowchart TD
+  A["9 PDF di catalogo"] --> B["Estrazione testo + coordinate<br/>(text layer · PyMuPDF)"]
+  B --> C{"Classifica riga"}
+  C -- "YEAR + molti token" --> D["Riga DATI"]
+  C -- "no YEAR · pochi token" --> M["Metadato<br/>marca / modello / motore"]
+  M -. "eredita gerarchia" .-> D
+  D --> E["Parsing colonne<br/>YEAR · TRANSM · FR/LR · numeri · MATL"]
+  E --> F["Asterischi WS/GS<br/>da coordinate X/Y (±5 pt)"]
+  F --> G["Normalizza Ø1 Ø2 L come range"]
+  G --> H[("CSV rettangolare · 20 colonne")]
+  H --> I["Esploratore web<br/>overlap matching + filtri WS/GS"]
+</div>
 
 ## I trick per il filtraggio
 
