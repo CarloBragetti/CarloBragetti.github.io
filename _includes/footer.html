@@ -1,6 +1,11 @@
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
-    <span class="muted">Officina digitale · costruito con Jekyll · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></span>
+    <nav class="footer-contacts" aria-label="Contatti">
+      <a href="https://www.linkedin.com/in/carlo-bragetti-25b489208/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/CarloBragetti" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <!-- email (Apple hide-my-email) da aggiungere qui, offuscata anti-bot -->
+    </nav>
+    <div class="footer-meta muted">© {{ site.time | date: '%Y' }} {{ site.author }}</div>
   </div>
 </footer>

@@ -27,6 +27,7 @@ permalink: /blog/:year/:month/:title/
 nav:
   - { name: "Blog", url: "/blog/" }
   - { name: "Progetti", url: "/projects/" }
+  - { name: "Demos", url: "/demos/" }
   - { name: "Chi sono", url: "/about/" }
 
 # Engineering domains used as post categories / home chips

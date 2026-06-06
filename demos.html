@@ -1,0 +1,23 @@
+---
+layout: default
+title: Demos
+permalink: /demos/
+---
+<section class="page-header">
+  <h1 class="page-title">Demos</h1>
+  <p class="post-subtitle">Progetti che puoi provare live, direttamente nel browser.</p>
+</section>
+
+{%- assign demoed = site.projects | where_exp: "p", "p.demo" -%}
+<div class="card-grid">
+  {%- for proj in demoed -%}
+  <a class="card" href="{{ proj.demo }}" target="_blank" rel="noopener">
+    <div class="card-meta">live - nel browser</div>
+    <h3>{{ proj.title }}</h3>
+    <p>{{ proj.subtitle | default: proj.excerpt | strip_html | truncate: 140 }}</p>
+    <div class="card-tags">{%- for t in proj.tech -%}<span class="chip">{{ t }}</span>{%- endfor -%}</div>
+  </a>
+  {%- else -%}
+  <p class="muted">Nessuna demo live al momento.</p>
+  {%- endfor -%}
+</div>
