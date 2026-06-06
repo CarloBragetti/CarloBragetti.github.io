@@ -81,6 +81,15 @@ si migliora la geometria dei condotti per favorire il riempimento e lo svuotamen
 ![Lavorazione dei condotti della testa]({{ "/assets/img/revisione-motore/07-condotti-porting.jpg" | relative_url }})
 *Condotti in lavorazione.*
 
+## STEP 7 — Teste: fresatura, sedi valvole e serraggio
+
+Si completa il lavoro sulle teste: **fresatura dei condotti** di aspirazione e scarico, **lappatura delle
+sedi valvole** (per una tenuta perfetta tra valvola e sede), **pulizia generale**, quindi **montaggio
+delle guarnizioni di testa** e **serraggio delle teste a 30 + 55 N·m** (serraggio in due fasi).
+
+![Teste: fresatura dei condotti, lappatura sedi e serraggio]({{ "/assets/img/revisione-motore/07b-teste-fresatura-serraggio.jpg" | relative_url }})
+*Fresatura dei condotti, lappatura delle sedi valvole, guarnizioni e serraggio delle teste.*
+
 ## STEP 8 — Distribuzione e messa in fase
 
 Sul motore richiuso: **montaggio degli alberi a camme** e della **distribuzione**, **fasatura delle due
@@ -92,7 +101,6 @@ e dello **statore**, e infine montaggio dei **corpi farfallati**.
 
 ---
 
-> *Nota: questo articolo ripercorre i passaggi così come li ho documentati nel reel. Mancano ancora un
-> paio di fotogrammi (uno step intermedio e quello finale a motore completato): li aggiungo appena
-> disponibili. Se qualche dettaglio tecnico va precisato — misure, coppie di serraggio, ricambi — lo
-> integro volentieri.*
+> *Nota: questo articolo ripercorre i passaggi così come li ho documentati nel reel. Manca ancora il
+> fotogramma finale, a motore completato: lo aggiungo appena disponibile. Se qualche dettaglio tecnico va
+> precisato — misure, coppie di serraggio, ricambi — lo integro volentieri.*
