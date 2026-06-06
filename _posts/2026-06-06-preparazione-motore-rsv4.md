@@ -15,13 +15,11 @@ Si parte dalla **micropallinatura** dei carter: una micro-sabbiatura delicata ch
 profondità senza aggredirlo, lasciando una finitura satinata uniforme. Oltre all'estetica, una superficie
 pulita rende molto più facile **individuare cricche, porosità o trafilamenti** in fase di ispezione.
 
-![Carter dopo la micropallinatura esterna]({{ "/assets/img/revisione-motore/01-micropallinatura-carter.jpg" | relative_url }})
-*I semicarter dopo il trattamento.*
+{% include figure.html src="/assets/img/revisione-motore/01-micropallinatura-carter.jpg" alt="Carter dopo la micropallinatura esterna" cap="I semicarter dopo il trattamento." %}
 
 Stesso trattamento anche sulla testa — qui il confronto **prima/dopo** rende l'idea:
 
-![Testa: prima e dopo la micropallinatura]({{ "/assets/img/revisione-motore/08-micropallinatura-testa.jpg" | relative_url }})
-*Prima e dopo la micropallinatura della testa.*
+{% include figure.html src="/assets/img/revisione-motore/08-micropallinatura-testa.jpg" alt="Testa: prima e dopo la micropallinatura" cap="Prima e dopo la micropallinatura della testa." %}
 
 ## STEP 2 — Misure: canne, pistoni e gap delle fasce
 
@@ -31,8 +29,7 @@ anche conicità e ovalizzazione), col **micrometro** il diametro dei **pistoni**
 compressione**. Sono questi giochi a garantire tenuta, controllo dell'olio e — soprattutto — l'assenza di
 grippaggi quando il motore va in temperatura e sale di giri.
 
-![Misura di canne e pistoni con alesametro]({{ "/assets/img/revisione-motore/02-misure-canne-pistoni.jpg" | relative_url }})
-*Rilevazione diametro canne e pistoni, e settaggio del gap fasce.*
+{% include figure.html src="/assets/img/revisione-motore/02-misure-canne-pistoni.jpg" alt="Misura di canne e pistoni con alesametro" cap="Rilevazione diametro canne e pistoni, e settaggio del gap fasce." %}
 
 ## STEP 3 — Equilibratura delle masse alterne (pistoni)
 
@@ -41,8 +38,7 @@ materiale dai **punti non critici** per portare tutte le masse allo stesso valor
 alterne** (quelle che salgono e scendono) significa meno vibrazioni e un motore più fluido e sfruttabile
 agli alti regimi.
 
-![Pesatura ed equilibratura dei pistoni]({{ "/assets/img/revisione-motore/03-equilibratura-pistoni.jpg" | relative_url }})
-*Pistoni, fasce e bilancia di precisione, con il foglio delle pesate.*
+{% include figure.html src="/assets/img/revisione-motore/03-equilibratura-pistoni.jpg" alt="Pesatura ed equilibratura dei pistoni" cap="Pistoni, fasce e bilancia di precisione, con il foglio delle pesate." %}
 
 ## STEP 4 — Equilibratura delle bielle
 
@@ -50,8 +46,7 @@ Stessa filosofia per le **bielle**: si misura il **peso complessivo** e, separat
 **piede** e della **testa** di biella. Così si bilancia la parte **rotante** (testa) e quella **alterna**
 (piede) tra tutti i cilindri, sempre togliendo materiale solo da zone non critiche.
 
-![Pesatura ed equilibratura delle bielle]({{ "/assets/img/revisione-motore/04-equilibratura-bielle.jpg" | relative_url }})
-*Misura del peso di piede e testa di biella sulla bilancia con apposito supporto.*
+{% include figure.html src="/assets/img/revisione-motore/04-equilibratura-bielle.jpg" alt="Pesatura ed equilibratura delle bielle" cap="Misura del peso di piede e testa di biella sulla bilancia con apposito supporto." %}
 
 ## STEP 5 — Fasce, accoppiamento e Plastigauge
 
@@ -60,8 +55,7 @@ chiusura del banco per misurare le **tolleranze delle bronzine di banco e di bie
 È il metodo classico per verificare il gioco dei cuscinetti: il filo di plastica si schiaccia e la sua
 larghezza dà la luce reale — il film d'olio (e quindi la durata) dipende da lì.
 
-![Montaggio fasce e accoppiamento pistoni-bielle]({{ "/assets/img/revisione-motore/05-fasce-accoppiamento-plastigauge.jpg" | relative_url }})
-*Pistoni accoppiati alle bielle, pronti per il controllo dei giochi.*
+{% include figure.html src="/assets/img/revisione-motore/05-fasce-accoppiamento-plastigauge.jpg" alt="Montaggio fasce e accoppiamento pistoni-bielle" cap="Pistoni accoppiati alle bielle, pronti per il controllo dei giochi." %}
 
 ## STEP 6 — Montaggio nel monoblocco e chiusura del banco
 
@@ -70,16 +64,14 @@ si ri-misura con il **Plastigauge** per un **doppio controllo** delle tolleranze
 **lubrificante per il primo assemblaggio**, applicazione della **pasta sigillante (Yamaha ThreeBond)** sui
 piani e **chiusura definitiva del banco motore**.
 
-![Montaggio nel monoblocco, Plastigauge e ThreeBond]({{ "/assets/img/revisione-motore/06-monoblocco-threebond.jpg" | relative_url }})
-*Doppio controllo dei giochi e chiusura definitiva dei carter.*
+{% include figure.html src="/assets/img/revisione-motore/06-monoblocco-threebond.jpg" alt="Montaggio nel monoblocco, Plastigauge e ThreeBond" cap="Doppio controllo dei giochi e chiusura definitiva dei carter." %}
 
 ## STEP 6.5 — Lavorazione dei condotti
 
 In parallelo, **lavorazione dei condotti di aspirazione e scarico** sulla testa (work in progress):
 si migliora la geometria dei condotti per favorire il riempimento e lo svuotamento dei cilindri.
 
-![Lavorazione dei condotti della testa]({{ "/assets/img/revisione-motore/07-condotti-porting.jpg" | relative_url }})
-*Condotti in lavorazione.*
+{% include figure.html src="/assets/img/revisione-motore/07-condotti-porting.jpg" alt="Lavorazione dei condotti della testa" cap="Condotti in lavorazione." %}
 
 ## STEP 7 — Teste: fresatura, sedi valvole e serraggio
 
@@ -87,8 +79,7 @@ Si completa il lavoro sulle teste: **fresatura dei condotti** di aspirazione e s
 sedi valvole** (per una tenuta perfetta tra valvola e sede), **pulizia generale**, quindi **montaggio
 delle guarnizioni di testa** e **serraggio delle teste a 30 + 55 N·m** (serraggio in due fasi).
 
-![Teste: fresatura dei condotti, lappatura sedi e serraggio]({{ "/assets/img/revisione-motore/07b-teste-fresatura-serraggio.jpg" | relative_url }})
-*Fresatura dei condotti, lappatura delle sedi valvole, guarnizioni e serraggio delle teste.*
+{% include figure.html src="/assets/img/revisione-motore/07b-teste-fresatura-serraggio.jpg" alt="Teste: fresatura dei condotti, lappatura sedi e serraggio" cap="Fresatura dei condotti, lappatura delle sedi valvole, guarnizioni e serraggio delle teste." %}
 
 ## STEP 8 — Distribuzione e messa in fase
 
@@ -96,8 +87,7 @@ Sul motore richiuso: **montaggio degli alberi a camme** e della **distribuzione*
 bancate** (anteriore e posteriore), registrazione del **gioco valvole**, chiusura dei **coperchi punterie**
 e dello **statore**, e infine montaggio dei **corpi farfallati**.
 
-![Motore rimontato: distribuzione, fasatura e corpi farfallati]({{ "/assets/img/revisione-motore/09-distribuzione-gioco-valvole.jpg" | relative_url }})
-*Il V4 rimontato, con distribuzione fasata e corpi farfallati installati.*
+{% include figure.html src="/assets/img/revisione-motore/09-distribuzione-gioco-valvole.jpg" alt="Motore rimontato: distribuzione, fasatura e corpi farfallati" cap="Il V4 rimontato, con distribuzione fasata e corpi farfallati installati." %}
 
 ---
 
