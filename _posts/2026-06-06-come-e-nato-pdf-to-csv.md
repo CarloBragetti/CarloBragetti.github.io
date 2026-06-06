@@ -93,7 +93,7 @@ Risultato: un CSV rettangolare e pulito (20 colonne), con Ø1, Ø2 e L normalizz
 
 In sintesi, il flusso completo — dal PDF al filtro:
 
-<div class="mermaid" markdown="0">
+```mermaid
 flowchart TD
   A["9 PDF di catalogo"] --> B["Estrazione testo + coordinate<br/>(text layer · PyMuPDF)"]
   B --> C{"Classifica riga"}
@@ -105,7 +105,7 @@ flowchart TD
   F --> G["Normalizza Ø1 Ø2 L come range"]
   G --> H[("CSV rettangolare · 20 colonne")]
   H --> I["Esploratore web<br/>overlap matching + filtri WS/GS"]
-</div>
+```
 
 ## I trick per il filtraggio
 

@@ -14,6 +14,15 @@
   {%- if page.mermaid -%}
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    // Convert fenced ```mermaid code blocks (rouge output) into .mermaid divs,
+    // reading the literal definition from textContent (preserves <br/> for line breaks).
+    document.querySelectorAll('.language-mermaid, pre code.language-mermaid').forEach(function (node) {
+      var code = node.querySelector('code') || node;
+      var div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = code.textContent;
+      (node.closest('div.language-mermaid') || node).replaceWith(div);
+    });
     mermaid.initialize({
       startOnLoad: true,
       theme: "base",
