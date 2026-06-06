@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<section class="page-header">
+  <h1 class="page-title">Blog</h1>
+  <p class="post-subtitle">Appunti su meccanica, motori, progettazione, schemi elettrici e prototipi 3D.</p>
+</section>
+
+<ul class="post-list">
+  {%- for post in site.posts -%}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+    <span>
+      <a class="pl-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="card-tags" style="margin-top:6px">{%- for c in post.categories -%}<span class="chip">{{ c }}</span>{%- endfor -%}</div>
+    </span>
+  </li>
+  {%- else -%}
+  <li><span class="muted">Nessun articolo ancora pubblicato.</span></li>
+  {%- endfor -%}
+</ul>

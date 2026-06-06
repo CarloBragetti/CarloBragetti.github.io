@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      {%- if page.status %}<span class="chip chip-status">{{ page.status }}</span>{% endif -%}
+      {%- for t in page.tech -%}<span class="chip">{{ t }}</span>{%- endfor -%}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif -%}
+    <div class="project-links">
+      {%- if page.repo %}<a class="btn" href="{{ page.repo }}" rel="noopener" target="_blank">Codice ↗</a>{% endif -%}
+      {%- if page.demo %}<a class="btn btn-accent" href="{{ page.demo }}" rel="noopener" target="_blank">Demo live ↗</a>{% endif -%}
+    </div>
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a class="back-link" href="{{ '/projects/' | relative_url }}">← Tutti i progetti</a>
+  </footer>
+</article>

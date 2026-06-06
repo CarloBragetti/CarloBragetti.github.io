@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">⚙</span>
+      <span class="brand-name">Carlo Bragetti</span>
+      <span class="brand-sub">// engineering log</span>
+    </a>
+    <nav class="nav" aria-label="Navigazione principale">
+      {%- for item in site.nav -%}
+      <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      {%- endfor -%}
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambia tema chiaro/scuro" title="Cambia tema">◐</button>
+    </nav>
+  </div>
+</header>

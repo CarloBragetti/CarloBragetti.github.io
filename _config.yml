@@ -1,0 +1,49 @@
+title: "Carlo Bragetti"
+tagline: "Meccanica · Motori · Progettazione · Schemi elettrici · Prototipi 3D"
+description: >-
+  Taccuino di ingegneria: appunti e progetti su meccanica, motori,
+  progettazione, schemi elettrici e prototipi 3D.
+author: Carlo Bragetti
+lang: it
+
+# Set for the user Pages site served at the domain root.
+url: "https://carlobragetti.github.io"
+baseurl: ""
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+  - scope: { path: "", type: "projects" }
+    values: { layout: "project" }
+
+permalink: /blog/:year/:month/:title/
+
+# Primary navigation
+nav:
+  - { name: "Blog", url: "/blog/" }
+  - { name: "Progetti", url: "/projects/" }
+  - { name: "Chi sono", url: "/about/" }
+
+# Engineering domains used as post categories / home chips
+domains:
+  - Meccanica
+  - Motori
+  - Progettazione
+  - Schemi elettrici
+  - Prototipi 3D
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .github

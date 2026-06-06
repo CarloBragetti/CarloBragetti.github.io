@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'it' }}" data-theme="dark">
+<head>
+  {%- include head.html -%}
+</head>
+<body>
+  <canvas id="bg-gears" aria-hidden="true"></canvas>
+  {%- include header.html -%}
+  <main class="container main">
+    {{ content }}
+  </main>
+  {%- include footer.html -%}
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>

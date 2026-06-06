@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15181c">
+<title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+{% seo title=false %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{%- feed_meta -%}
+<!-- Apply saved theme before paint to avoid flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>

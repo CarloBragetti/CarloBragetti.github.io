@@ -1,0 +1,22 @@
+---
+layout: default
+title: Progetti
+permalink: /projects/
+---
+<section class="page-header">
+  <h1 class="page-title">Progetti</h1>
+  <p class="post-subtitle">Cose costruite: software, strumenti, hardware e prototipi.</p>
+</section>
+
+<div class="card-grid">
+  {%- for proj in site.projects -%}
+  <a class="card project" href="{{ proj.url | relative_url }}">
+    <div class="card-meta">{%- if proj.status %}{{ proj.status }}{% endif -%}</div>
+    <h3>{{ proj.title }}</h3>
+    <p>{{ proj.subtitle | default: proj.excerpt | strip_html | truncate: 140 }}</p>
+    <div class="card-tags">{%- for t in proj.tech -%}<span class="chip">{{ t }}</span>{%- endfor -%}</div>
+  </a>
+  {%- else -%}
+  <p class="muted">Progetti in arrivo.</p>
+  {%- endfor -%}
+</div>
