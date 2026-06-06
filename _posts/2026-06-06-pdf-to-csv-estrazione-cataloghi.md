@@ -1,7 +1,7 @@
 ---
 title: "Estrarre dati strutturati da cataloghi tecnici in PDF"
 subtitle: "Il progetto pdf-to-csv: da tabelle gerarchiche a un CSV navigabile"
-date: 2026-06-08 10:00:00 +0200
+date: 2026-06-06 11:00:00 +0200
 categories: [Progettazione, Dati]
 ---
 
