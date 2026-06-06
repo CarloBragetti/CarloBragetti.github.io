@@ -5,19 +5,20 @@ date: 2026-06-06 14:00:00 +0200
 categories: [Meccanica, Dati]
 ---
 
-Quasi tutti i miei progetti software nascono da un problema fisico, con le mani sporche di grasso.
-Questo non fa eccezione.
+Quasi tutti i miei progetti software nascono da un problema fisico. Questo non fa eccezione.
 
-## Il problema: una cuffia strappata
+## Il contesto: una Mini e un po' di sano smanettamento
 
 Ho una **Mini Cooper S del 2006** — la prima serie, la **R53**, quella col compressore volumetrico.
-È un'auto su cui metto regolarmente mano (mezzo box è pieno di pezzi che le ho stampato in 3D), quindi
-quando ho trovato una **cuffia del semiasse** (il soffietto in gomma che protegge il giunto omocinetico)
-**strappata**, la domanda non era "la porto dal meccanico?" ma "qual è il pezzo giusto da ordinare?".
+L'ho presa con un'idea precisa: usarla come banco di prova per **provare a elaborarne l'assetto**
+(restiamo sul generico). È un'auto su cui metto regolarmente mano — mezzo box è pieno di pezzi che le ho
+stampato in 3D.
 
-Una cuffia rotta è una di quelle cose che sembrano banali ma non lo sono: appena si lacera, il grasso
-schizza via e sporco e acqua entrano nel giunto. Da lì, il giunto omocinetico si rovina in fretta — e a
-quel punto non sostituisci più una cuffia da pochi euro, ma il semiasse. Meglio prenderla in tempo.
+Lavorandoci, mi sono trovato una **cuffia del semiasse** (il soffietto in gomma che protegge il giunto
+omocinetico) ormai **logorata**, da sostituire. Manutenzione ordinaria, niente di drammatico — ma con una
+domanda pratica: *qual è il pezzo giusto da ordinare?* Una cuffia consumata, se la trascuri, prima o poi
+cede: il grasso esce, sporco e acqua entrano, e il giunto si rovina. Tanto vale cambiarla per tempo, e
+sceglierla bene.
 
 ## Perché trovare il pezzo era il vero problema
 
@@ -117,9 +118,6 @@ la differenza nella scelta del pezzo.
 **Il limite onesto.** WS e GS sono posizioni fisiche **indipendenti**, con gamme dimensionali sovrapposte:
 **non si può dedurre** il lato dai soli numeri. A volte il risultato di un'analisi è capire cosa *non* è
 deducibile — e scriverlo.
-
-> Il dettaglio implementativo dell'estrazione l'ho ripreso anche qui:
-> [Estrarre dati strutturati da cataloghi tecnici in PDF](/blog/2026/06/pdf-to-csv-estrazione-cataloghi/).
 
 ## Il risultato
 
