@@ -1,23 +1,24 @@
 ---
 layout: default
-lang: it
-translation_url: /en/
+permalink: /en/
+lang: en
+translation_url: /
 ---
 <section class="hero">
-  <div class="hero-kicker">officina digitale</div>
-  <h1 class="hero-title">Appunti di ingegneria & progetti</h1>
-  <p class="hero-tagline">{{ site.tagline }}</p>
+  <div class="hero-kicker">digital workshop</div>
+  <h1 class="hero-title">Engineering notes & projects</h1>
+  <p class="hero-tagline">Mechanics · Engines · Design · Wiring diagrams · 3D prototypes</p>
   <div class="domain-chips">
-    {%- for d in site.domains -%}<span class="chip">{{ d }}</span>{%- endfor -%}
+    <span class="chip">Mechanics</span><span class="chip">Engines</span><span class="chip">Design</span><span class="chip">Wiring diagrams</span><span class="chip">3D prototypes</span>
   </div>
 </section>
 
-{%- assign posts_it = site.posts | where_exp: "p", "p.lang != 'en'" -%}
-{%- assign projects_it = site.projects | where_exp: "p", "p.lang != 'en'" -%}
+{%- assign posts_en = site.posts | where_exp: "p", "p.lang == 'en'" -%}
+{%- assign projects_en = site.projects | where_exp: "p", "p.lang == 'en'" -%}
 <section>
-  <h2 class="section-title">Ultimi articoli</h2>
+  <h2 class="section-title">Latest articles</h2>
   <div class="card-grid">
-    {%- for post in posts_it limit: 4 -%}
+    {%- for post in posts_en limit: 4 -%}
     <a class="card" href="{{ post.url | relative_url }}">
       <div class="card-meta">{{ post.date | date: "%d %b %Y" }}</div>
       <h3>{{ post.title }}</h3>
@@ -25,18 +26,18 @@ translation_url: /en/
       <div class="card-tags">{%- for c in post.categories -%}<span class="chip">{{ c }}</span>{%- endfor -%}</div>
     </a>
     {%- else -%}
-    <p class="muted">Presto i primi articoli.</p>
+    <p class="muted">First articles coming soon.</p>
     {%- endfor -%}
   </div>
-  {%- if posts_it.size > 4 -%}
-  <p style="margin-top:16px"><a class="back-link" href="{{ '/blog/' | relative_url }}">Tutti gli articoli →</a></p>
+  {%- if posts_en.size > 4 -%}
+  <p style="margin-top:16px"><a class="back-link" href="{{ '/en/blog/' | relative_url }}">All articles →</a></p>
   {%- endif -%}
 </section>
 
 <section>
-  <h2 class="section-title">Progetti in evidenza</h2>
+  <h2 class="section-title">Featured projects</h2>
   <div class="card-grid">
-    {%- for proj in projects_it limit: 3 -%}
+    {%- for proj in projects_en limit: 3 -%}
     <a class="card project" href="{{ proj.url | relative_url }}">
       <div class="card-meta">{%- if proj.status %}{{ proj.status }}{% endif -%}</div>
       <h3>{{ proj.title }}</h3>
@@ -44,7 +45,7 @@ translation_url: /en/
       <div class="card-tags">{%- for t in proj.tech -%}<span class="chip">{{ t }}</span>{%- endfor -%}</div>
     </a>
     {%- else -%}
-    <p class="muted">Progetti in arrivo.</p>
+    <p class="muted">Projects coming soon.</p>
     {%- endfor -%}
   </div>
 </section>

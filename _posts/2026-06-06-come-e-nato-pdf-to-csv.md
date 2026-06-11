@@ -4,6 +4,8 @@ subtitle: "Dalla Mini Cooper S R53 del 2006 a uno strumento per cercare ricambi 
 date: 2026-06-06 14:00:00 +0200
 categories: [Meccanica, Dati]
 mermaid: true
+lang: it
+translation_url: /en/blog/2026/06/how-pdf-to-csv-was-born/
 ---
 
 Quasi tutti i miei progetti software nascono da un problema fisico. Questo non fa eccezione.

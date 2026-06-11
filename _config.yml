@@ -30,6 +30,13 @@ nav:
   - { name: "Demos", url: "/demos/" }
   - { name: "Chi sono", url: "/about/" }
 
+# English navigation (manual i18n: EN mirror lives under /en/, plugin-free)
+nav_en:
+  - { name: "Blog", url: "/en/blog/" }
+  - { name: "Projects", url: "/en/projects/" }
+  - { name: "Demos", url: "/en/demos/" }
+  - { name: "About", url: "/en/about/" }
+
 # Engineering domains used as post categories / home chips
 domains:
   - Meccanica

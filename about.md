@@ -3,6 +3,8 @@ layout: page
 title: Chi sono
 subtitle: Progettista & maker - tra meccanica, elettronica e codice
 permalink: /about/
+lang: it
+translation_url: /en/about/
 ---
 
 Ciao, sono **Carlo**. Questo è il mio taccuino di ingegneria: un posto dove raccolgo

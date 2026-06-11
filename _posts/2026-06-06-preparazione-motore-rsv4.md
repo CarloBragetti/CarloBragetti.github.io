@@ -3,6 +3,8 @@ title: "Preparazione del motore della mia Aprilia RSV4 1000"
 subtitle: "Blueprinting passo per passo: micropallinatura, misure, equilibratura, Plastigauge e rimontaggio del V4"
 date: 2026-06-06 16:00:00 +0200
 categories: [Motori, Meccanica]
+lang: it
+translation_url: /en/blog/2026/06/aprilia-rsv4-engine-blueprinting/
 ---
 
 Questa non è una semplice riparazione: è la **preparazione "a regola d'arte"** del V4 da 1000 cc della

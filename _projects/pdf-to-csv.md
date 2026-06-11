@@ -5,6 +5,8 @@ status: "pubblicato"
 tech: [Python, PyMuPDF, Streamlit, stlite]
 repo: "https://github.com/CarloBragetti/pdf-to-csv"
 demo: "https://carlobragetti.github.io/pdf-to-csv/"
+lang: it
+translation_url: /en/projects/pdf-to-csv/
 ---
 
 Pipeline che trasforma cataloghi PDF con tabelle gerarchiche multi-livello in un **CSV rettangolare**

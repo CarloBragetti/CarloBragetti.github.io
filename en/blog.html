@@ -1,18 +1,18 @@
 ---
 layout: default
 title: Blog
-permalink: /blog/
-lang: it
-translation_url: /en/blog/
+permalink: /en/blog/
+lang: en
+translation_url: /blog/
 ---
 <section class="page-header">
   <h1 class="page-title">Blog</h1>
-  <p class="post-subtitle">Appunti su meccanica, motori, progettazione, schemi elettrici e prototipi 3D.</p>
+  <p class="post-subtitle">Notes on mechanics, engines, design, wiring diagrams and 3D prototypes.</p>
 </section>
 
-{%- assign posts_it = site.posts | where_exp: "p", "p.lang != 'en'" -%}
+{%- assign posts_en = site.posts | where_exp: "p", "p.lang == 'en'" -%}
 <ul class="post-list">
-  {%- for post in posts_it -%}
+  {%- for post in posts_en -%}
   <li>
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
     <span>
@@ -21,6 +21,6 @@ translation_url: /en/blog/
     </span>
   </li>
   {%- else -%}
-  <li><span class="muted">Nessun articolo ancora pubblicato.</span></li>
+  <li><span class="muted">No articles published yet.</span></li>
   {%- endfor -%}
 </ul>

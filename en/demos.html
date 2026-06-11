@@ -1,25 +1,25 @@
 ---
 layout: default
 title: Demos
-permalink: /demos/
-lang: it
-translation_url: /en/demos/
+permalink: /en/demos/
+lang: en
+translation_url: /demos/
 ---
 <section class="page-header">
   <h1 class="page-title">Demos</h1>
-  <p class="post-subtitle">Progetti che puoi provare live, direttamente nel browser.</p>
+  <p class="post-subtitle">Projects you can try live, right in your browser.</p>
 </section>
 
-{%- assign demoed = site.projects | where_exp: "p", "p.demo" | where_exp: "p", "p.lang != 'en'" -%}
+{%- assign demoed = site.projects | where_exp: "p", "p.demo" | where_exp: "p", "p.lang == 'en'" -%}
 <div class="card-grid">
   {%- for proj in demoed -%}
   <a class="card" href="{{ proj.demo }}" target="_blank" rel="noopener">
-    <div class="card-meta">live - nel browser</div>
+    <div class="card-meta">live - in the browser</div>
     <h3>{{ proj.title }}</h3>
     <p>{{ proj.subtitle | default: proj.excerpt | strip_html | truncate: 140 }}</p>
     <div class="card-tags">{%- for t in proj.tech -%}<span class="chip">{{ t }}</span>{%- endfor -%}</div>
   </a>
   {%- else -%}
-  <p class="muted">Nessuna demo live al momento.</p>
+  <p class="muted">No live demos at the moment.</p>
   {%- endfor -%}
 </div>

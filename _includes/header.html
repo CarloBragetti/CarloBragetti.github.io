@@ -1,14 +1,26 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
+    {%- if page.lang == 'en' -%}
+      {%- assign nav_items = site.nav_en -%}
+      {%- assign home_url = '/en/' -%}
+    {%- else -%}
+      {%- assign nav_items = site.nav -%}
+      {%- assign home_url = '/' -%}
+    {%- endif -%}
+    <a class="brand" href="{{ home_url | relative_url }}">
       <span class="brand-mark" aria-hidden="true">⚙</span>
       <span class="brand-name">Carlo Bragetti</span>
       <span class="brand-sub">// engineering log</span>
     </a>
     <nav class="nav" aria-label="Navigazione principale">
-      {%- for item in site.nav -%}
+      {%- for item in nav_items -%}
       <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
       {%- endfor -%}
+      {%- if page.lang == 'en' -%}
+      <a class="nav-link" href="{{ page.translation_url | default: '/' | relative_url }}" title="Versione italiana" aria-label="Versione italiana">IT</a>
+      {%- else -%}
+      <a class="nav-link" href="{{ page.translation_url | default: '/en/' | relative_url }}" title="English version" aria-label="English version">EN</a>
+      {%- endif -%}
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambia tema chiaro/scuro" title="Cambia tema">◐</button>
     </nav>
   </div>

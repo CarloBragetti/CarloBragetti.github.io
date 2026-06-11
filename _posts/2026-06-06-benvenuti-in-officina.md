@@ -3,6 +3,8 @@ title: "Benvenuti in officina"
 subtitle: "Di cosa parla questo blog e perché l'ho aperto"
 date: 2026-06-06 09:00:00 +0200
 categories: [Progettazione]
+lang: it
+translation_url: /en/blog/2026/06/welcome-to-the-workshop/
 ---
 
 Questo è il primo post di un taccuino di ingegneria. L'idea è semplice: avere un posto dove
